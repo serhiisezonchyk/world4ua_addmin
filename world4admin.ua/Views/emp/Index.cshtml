@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>empClass</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <label class="control-label col-md-2" for="host">Host</label><br />
+            <div class="col-md-10">
+                <input type="text" id="host" class="form-control" name="host"/>
+            </div>
+        </div>
+        <hr />
+        <div class="form-group">
+            <label class="control-label col-md-2" for="port">Port</label><br />
+            <div class="col-md-10">
+                <input type="text" id="port" class="form-control" name="port"/>
+            </div>
+        </div>
+        <hr />
+        <div class="form-group">
+            <label class="control-label col-md-2" for="database">Database</label><br />
+            <div class="col-md-10">
+                <input type="text" id="database" class="form-control" name="database"/>
+            </div>
+        </div>
+        <hr />
+        <div class="form-group">
+            <label class="control-label col-md-2" for="user">User</label><br />
+            <div class="col-md-10">
+                <input type="text" id="user" class="form-control" name="user"/>
+            </div>
+        </div>
+        <hr />
+        <div class="form-group">
+            <label class="control-label col-md-2" for="pass">Password</label><br />
+            <div class="col-md-10">
+                <input type="password" id="pass" class="form-control" name="pass"/>
+            </div>
+        </div>
+        <hr />
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Enter" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}

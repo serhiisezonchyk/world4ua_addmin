@@ -1,0 +1,158 @@
+﻿@model world4admin.ua.Models.empClass
+
+@{
+    ViewBag.Title = "Details";
+}
+<h2>Details</h2>
+<div>
+    <h4>empClass</h4>
+    <hr />
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.name)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.name)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.fugitive_status)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.fugitive_status)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.general_info)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.general_info)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.entry_doc)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.entry_doc)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.reg_doc)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.reg_doc)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.transport)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.transport)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.housing)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.housing)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.nutrition)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.nutrition)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.pets)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.pets)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.charity)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.charity)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.add_info)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.add_info)
+            </td>
+        </tr>
+
+    </table>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.gid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+<style>
+
+    table {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 14px;
+        background: white;
+        max-width: 70%;
+        width: 70%;
+        border-collapse: collapse;
+        text-align: left;
+    }
+
+    th {
+        font-weight: normal;
+        color: #039;
+        border-bottom: 2px solid #6678b1;
+        padding: 10px 8px;
+    }
+
+    td {
+        border-bottom: 2px solid #6678b1;
+        color: #039;
+        padding: 9px 8px;
+        transition: .3s linear;
+    }
+
+    tr:hover td {
+        color: #6699ff;
+    }
+    a {
+        background-color: #2256a3c7;
+        color: white;
+        padding: 5px 5px;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 3px;
+        width: 10%;
+    }
+
+        a:hover {
+            background-color: #4472b5dd;
+            cursor: pointer;
+        }
+
+        a:active {
+            box-shadow: none;
+            top: 5px;
+        }
+
+
+</style>
