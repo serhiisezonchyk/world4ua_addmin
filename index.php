@@ -1,1 +1,1 @@
-<?php include_once("Index.cshtml"); ?>
+<?php include_once("world4admin.ua/Views/emp/Index.cshtml"); ?>
